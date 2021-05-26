@@ -1,36 +1,264 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-Bold.woff2') format('woff2'),
-        url('Poppins-Bold.woff') format('woff');
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+         url("../fonts/Poppins-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-SemiBold.woff2') format('woff2'),
-        url('Poppins-SemiBold.woff') format('woff');
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+         url("../fonts/Poppins-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('Poppins-Medium.woff2') format('woff2'),
-        url('Poppins-Medium.woff') format('woff');
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+        url("../fonts/Poppins-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Regular.woff2') format('woff2'),
-        url('OpenSans-Regular.woff') format('woff');
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+         url("../fonts/OpenSans-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+/* #BOX-SIZING */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+/**:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(42, 80, 147, 0.4);
+  border-radius: 1px;
+}*/
+
+/* #GLOBAL-STYLES */
+body {
+
+}
+
+/* VISUALLY HIDING CODE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+:root {
+    --font-family-open-sans: "Open Sans", "Arial", sans-serif;
+    --font-family-poppins: "Poppins", "Arial", sans-serif;
+    --text-color: #6a983c;
+    --default-color: #151515;
+}
+/*SITE-HEADER*/
+.sitenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(21, 21, 21, 15%);
+}
+.sitenav a {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.sitenav a:hover {
+    text-decoration: underline;
+}
+.sitenav__button {
+    display: inline-block;
+    margin-right: 33px;
+    white-space: nowrap;
+    color: var(--default-color);
+}
+.sitenav__button:first-child {
+    color: var(--text-color);
+}
+.sitenav__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.sitenav__item {
+    margin-left: 38px;
+}
+.sitenav__link {
+    color: var(--text-color);
+}
+.logo {
+    margin-right: 158px;
+}
+.logo__img {
+    display: block;
+}
+
+.site-header__middle {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.form {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    margin-right: 247px;
+    padding: 11px;
+}
+.form__select {
+    background-color: transparent;
+    font-family: var(--font-family-poppins);
+    display: flex;
+    align-items: center;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    width: 30%;
+    margin-right: 10px;
+    font-weight: 700;
+    margin-right: 24px;
+}
+option {
+    font-family: var(--font-family-poppins);
+}
+.form__select:after {
+    background-image: url("../images/arrow-bottom.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16px 16px;
+    content: "";
+
+}
+.form__input {
+    font-family: var(--font-family-open-sans);
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    flex-grow: 1;
+    padding-left: 24px;
+    border-left: 1px solid #d1d1d1;
+    width: 70%;
+}
+.site-header__bottom {
+    background-color: #f9f9f9;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.site-header__bottom__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.item {
+    position: relative;
+    font-family: var(--font-family-poppins);
+    margin: 0 20px;
+}
+.item:first-child {
+    margin-left: 0;
+}
+.item:last-child {
+    margin-right: 0;
+}
+.item:hover .dropdown-menu {
+    display: block;
+}
+.desc {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--default-color);
+    text-decoration: none;
+}
+.desc:after {
+    background-image: url("../images/arrow-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 6px;
+    content: "";
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+.item:hover .desc:after {
+    transform: rotate(180deg);
+
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    transform: translateY(20px);
+    background-color: #fff;
+    list-style-type: none;
+    padding: 24px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: #2d2e40;
+    font-weight: 400;
+    line-height: 33px;
+    white-space: nowrap;
+}
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
