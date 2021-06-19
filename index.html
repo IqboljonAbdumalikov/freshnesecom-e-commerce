@@ -3,40 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+	
 	<link rel="stylesheet" href="./css/normalize.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
 	<title>Freshnesecom | Fresh food</title>
 </head>
 <body>
 	<header class="site-header">
-		<div class="container">
 
-			<nav class="sitenav">
+		<nav class="sitenav">
 
+			<div class="sitenav__container container">
+				
 				<div class="sitenav__buttons">
-					<a class="sitenav__button" href="#">Chat with us</a>
-					<a class="sitenav__button" href="tel:+420336775664">+420 336 775 664</a>
-					<a class="sitenav__button" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+					<a class="sitenav__button button" href="#">Chat with us</a>
+					<a class="sitenav__button button" href="tel:+420336775664">+420 336 775 664</a>
+					<a class="sitenav__button button" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+				</div>
+				<div class="sitenav__list-wrapper">
+					<ul class="sitenav__list">
+
+						<li class="sitenav__item">
+							<a class="sitenav__link" href="#">Blog</a>
+						</li>
+						<li class="sitenav__item">
+							<a class="sitenav__link" href="#">About Us</a>
+						</li>
+						<li class="sitenav__item">
+							<a class="sitenav__link" href="#">Careers</a>
+						</li>
+
+					</ul>
 				</div>
 
+			</div>
+		</nav>
 
-				<ul class="sitenav__list">
-					<li class="sitenav__item">
-						<a class="sitenav__link" href="#">Blog</a>
-					</li>
-					<li class="sitenav__item">
-						<a class="sitenav__link" href="#">About Us</a>
-					</li>
-					<li class="sitenav__item">
-						<a class="sitenav__link" href="#">Careers</a>
-					</li>
-					
-				</ul>
-			</nav>
-
-			<div class="site-header__middle ">
+		<div class="site-header__middle site-header--open">
+			<div class="site-header__middle__container container">
 				
-				<a class="site-header__link logo" href="#">
+
+				<a class="site-header__link logo" href="/">
 					<img class="logo__img" src="./images/site-header-logo.svg" alt="Freshenese site logo" width="177" height="50">
 				</a>
 
@@ -44,100 +54,658 @@
 
 					<label class="visually-hidden" for="categories"></label>
 					<select class="form__select" name="" id="categories">
-						<option value="">All categories</option>
+						<p>Lorem, ipsum.</p>
+						<option class="select__option" value="">All categories</option>
 						<option value="meat">Meat</option>
 					</select>
-					
-					<label class="visually-hidden" for="input--search">Search </label>
-					<input class="form__input" type="text" id="input--search" name="search" placeholder="Search Products, categories ..." required>
 
+					<label class="visually-hidden" for="input--search">Search </label>
+					<input class="form__input" type="text" id="input--search" name="search" placeholder="Search Products, categories ..." required autocomplete="off">
+					<button class="form__button" type="submit"></button>
 				</form>
+
+				<div class="user">
+					<button class="user__account"></button>
+					<button class="user__pocket"></button>
+				</div>
+				<button class="site-header__menu-toggler" type="button" aria-label="Open/Close"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-header__bottom">
+		<div class="container">
+
+
+			<ul class="site-header__bottom__list">
+				<li class="item">
+					<a class="desc"href="/">Bakery</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Fruit and vegetables</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Meat and fish</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Drink</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Kitchen</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Special nutrition</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Baby</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a class="desc"href="/">Pharmacy</a>
+					<ul class="dropdown-menu">
+						<li><a href="blank.html">Bread</a></li>
+						<li><a href="blank.html">Cake</a></li>
+						<li><a href="blank.html">Pancake</a></li>
+						<li><a href="blank.html">Content</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+	</header>
+
+
+	<!-- MAIN -->
+	<main class="main">
+		
+		<!-- CATEGORIES -->
+		<section class="categories">
+			<div class="categories__container container">
+				
+				<div class="categories__menu">
+					<h2 class="categories__heading">Category menu</h2>
+					<ul class="categories__list">
+
+						<li class="categories__item">
+							<a class="categories__link" href="#">Bakery</a>
+						</li>
+
+						<li class="categories__item">
+							<a class="categories__link" href="#">Fruits and vegetables</a>
+						</li>
+
+						<li class="categories__item">
+							<a class="categories__link" href="#">Meat and fish</a>
+						</li>
+
+						<li class="categories__item">
+							<a class="categories__link" href="#">Drinks</a>
+						</li>
+
+						<li class="categories__item">
+							<a class="categories__link" href="#">Kitchen</a>
+						</li>
+
+					</ul>
+					<a class="categories__button button" href="#">More categories</a>
+				</div>
+
+				<div class="cards">
+					
+					<div class="cards__info">
+						<b>Banner subfocus</b>
+						<h3 class="cards__heading">Space for heading</h3>
+						<a class="cards__button button" href="#">Read recepies</a>
+					</div>
+
+					<div class="cards__info">
+						<b>Banner subfocus</b>
+						<h3 class="cards__heading">Space for heading</h3>
+						<a class="cards__button button" href="#">Read recepies</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- BEST-SELLERS -->
+		<section class="best-sellers">
+			<div class="best-sellers__container container">
+				
+				<div class="best-sellers__menu">
+
+					<h2 class="best-sellers__heading">Best selling products</h2>
+
+					<ul class="best-sellers__list">
+
+						<li class="best-sellers__item">
+							<a class="best-sellers__link" href="#">Kitchen</a>
+						</li>
+
+						<li class="best-sellers__item">
+							<a class="best-sellers__link" href="#">Meat and fish</a>
+						</li>
+
+						<li class="best-sellers__item">
+							<a class="best-sellers__link" href="#">Special nutrition</a>
+						</li>
+
+						<li class="best-sellers__item">
+							<a class="best-sellers__link" href="#">Pharmacy</a>
+						</li>
+
+						<li class="best-sellers__item">
+							<a class="best-sellers__link" href="#">Baby</a>
+						</li>
+
+					</ul>
+
+					<a class="best-sellers__button button" href="#">More products</a>
+
+				</div>
+
+				<div class="best-sellers__cards">
+					
+					<ul class="best-sellers__cards__list">
+
+						<li class="best-sellers__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="best-sellers__cards__item__heading">Product title</h4>
+							<p class="best-sellers__cards__item__desc">Space for a small product description</p>
+							<div class="best-sellers__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
+						</li>
+
+						<li class="best-sellers__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="best-sellers__cards__item__heading">Product title</h4>
+							<p class="best-sellers__cards__item__desc">Space for a small product description</p>
+							<div class="best-sellers__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
+						</li>
+
+						<li class="best-sellers__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="best-sellers__cards__item__heading">Product title</h4>
+							<p class="best-sellers__cards__item__desc">Space for a small product description</p>
+							<div class="best-sellers__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- BEST-PRODUCTS -->
+		<section class="best-products">
+			<div class="best-products__container container">
+				
+				<div class="best-products__menu">
+
+					<h2 class="best-products__heading">Best from Farmers</h2>
+
+					<ul class="best-products__list">
+
+						<li class="best-products__item">
+							<a class="best-products__link" href="#">Carrots</a>
+						</li>
+
+						<li class="best-products__item">
+							<a class="best-products__link" href="#">Tomatoes</a>
+						</li>
+
+						<li class="best-products__item">
+							<a class="best-products__link" href="#">Potatoes</a>
+						</li>
+
+						<li class="best-products__item">
+							<a class="best-products__link" href="#">Chicken</a>
+						</li>
+
+						<li class="best-products__item">
+							<a class="best-products__link" href="#">Pork</a>
+						</li>
+
+					</ul>
+
+					<a class="best-products__button button" href="#">More products</a>
+
+				</div>
+
+				<div class="best-products__cards">
+					
+					<ul class="best-products__cards__list">
+
+						<li class="best-products__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="best-products__cards__item__heading">Product title</h4>
+							<p class="best-products__cards__item__desc">Space for a small product description</p>
+							<div class="best-products__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
+						</li>
+
+						<li class="best-products__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="best-products__cards__item__heading">Product title</h4>
+							<p class="best-products__cards__item__desc">Space for a small product description</p>
+							<div class="best-products__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
+						</li>
+
+						<li class="best-products__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="best-products__cards__item__heading">Product title</h4>
+							<p class="best-products__cards__item__desc">Space for a small product description</p>
+							<div class="best-products__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</section>
+
+
+
+		<!-- CUSTOMERS -->
+		<section class="customers">
+
+			<div class="container">
+
+				<div class="customers__title-wrapper">
+					<h3 class="customers__heading">Our customers says</h3>
+					<a class="customer__button button" href="#">Button</a>
+				</div>
+
+				<ul class="customers__list">
+					<li class="customers__item">
+
+						<p class="customers__desc">
+							“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+						</p>
+						<p class="customers__name">Name and Surname</p>
+						<img class="customers__img" src="./images/man-in-red-t-shirt-looks-satisfied.png" alt="" width="48" height="48">
+					</li>
+
+					<li class="customers__item">
+
+						<p class="customers__desc">
+							“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+						</p>
+						<p class="customers__name">Name and Surname</p>
+						<img class="customers__img" src="./images/man-in-red-t-shirt-looks-satisfied.png" alt="" width="48" height="48">
+					</li>
+
+					<li class="customers__item">
+
+						<p class="customers__desc">
+							“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+						</p>
+						<p class="customers__name">Name and Surname</p>
+						<img class="customers__img" src="./images/man-in-red-t-shirt-looks-satisfied.png" alt="" width="48" height="48">
+					</li>
+
+					<li class="customers__item">
+
+						<p class="customers__desc">
+							“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+						</p>
+						<p class="customers__name">Name and Surname</p>
+						<img class="customers__img" src="./images/man-in-red-t-shirt-looks-satisfied.png" alt="" width="48" height="48">
+					</li>
+
+
+				</ul>
 
 			</div>
 
 
-			<div class="site-header__bottom">
-				<div class="container">
+			
+
+
+		</section>
+		<!-- HEADLINE -->
+		<section class="headline">
+			<div class="container">
+				
+				<div class="headline__title-wrapper">
+					<h3 class="headline__heading">Section Headline</h3>
+					<a class="headine__button button" href="#">Button</a>
+				</div>
+
+				<div class="headline__cards">
 					
-					
-					<ul class="site-header__bottom__list">
-						<li class="item">
-							<a class="desc"href="/">Bakery</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+					<ul class="headline__cards__list">
+
+						<li class="headline__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="headline__cards__item__heading">Product title</h4>
+							<p class="headline__cards__item__desc">Space for a small product description</p>
+							<div class="headline__cards__item__cost cost">
+								<strong>3.26 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Fruit and vegetables</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+
+						<li class="headline__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="headline__cards__item__heading">Product title</h4>
+							<p class="headline__cards__item__desc">Space for a small product description</p>
+							<div class="headline__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Meat and fish</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+
+						<li class="headline__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="headline__cards__item__heading">Product title</h4>
+							<p class="headline__cards__item__desc">Space for a small product description</p>
+							<div class="headline__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Drink</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+
+						<li class="headline__cards__item">
+							<img src="./images/mountain.jpg" alt="" width="237" height="180">
+							<h4 class="headline__cards__item__heading">Product title</h4>
+							<p class="headline__cards__item__desc">Space for a small product description</p>
+							<div class="headline__cards__item__cost cost">
+								<strong>1.48 USD</strong>
+								<a class="cost__button" href="#">Buy now</a>
+							</div>
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Kitchen</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</section>
+
+		<!-- POSTS -->
+		<section class="posts">
+
+			<div class="container">
+
+				<div class="posts__title-wrapper">
+					<h3 class="posts__heading">Read our Blog posts</h3>
+					<a class="posts__button button" href="#">Go to Blog</a>
+				</div>
+
+				<div class="posts__info-wrapper">
+
+					<div class="posts__tips tips">
+						<img class="posts__tips__img" src="./images/dessert.png" alt="">
+						<span class="tips__text">Dinner tips</span>
+						<h3 class="tips__heading">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+						<div class="tips__authors-info">
+							<img src="./images/korean-man-weared-glasses.png" alt="" width="32" height="32">
+							<span>Author</span>
+							<time datetime="2020-06-17">17.06.2020</time>
+						</div>
+					</div>
+
+					<div class="posts__vegs about-vegs">
+						<img class="about-vegs__img" src="./images/dessert-with-tea-and-mango.png" alt="" width="269" height="180">
+						<span class="about-vegs__text">Vegetables</span>
+						<h3 class="about-vegs__heading">Which vegetable your family will love and want’s eat each day</h3>
+						<span>Author</span>
+						<time datetime="2020-06-17">17.06.2020</time>
+					</div>
+
+					<ul class="posts__list">
+
+						<li class="posts__item">
+							<img src="./images/salad-morning-routines.png" alt="" width="96" height="96">
+							<div class="posts__item__info">
+								<h4 class="posts__item__heading">Salat is kinda good start to your morning routines</h4>
+								<span>Author</span>
+								<time datetime="2020-06-14">14.06.2020</time>
+							</div>
+
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Special nutrition</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+
+						<li class="posts__item">
+							<img src="./images/salad-morning-routines.png" alt="" width="96" height="96">
+							<div class="posts__item__info">
+								<h4 class="posts__item__heading">Salat is kinda good start to your morning routines</h4>
+								<span>Author</span>
+								<time datetime="2020-06-14">14.06.2020</time>
+							</div>
+
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Baby</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
+
+						<li class="posts__item">
+							<img src="./images/salad-morning-routines.png" alt="" width="96" height="96">
+							<div class="posts__item__info">
+								<h4 class="posts__item__heading">Salat is kinda good start to your morning routines</h4>
+								<span>Author</span>
+								<time datetime="2020-06-14">14.06.2020</time>
+							</div>
+
 						</li>
-						<li class="item">
-							<a class="desc"href="/">Pharmacy</a>
-							<ul class="dropdown-menu">
-								<li><a href="blank.html">Bread</a></li>
-								<li><a href="blank.html">Cake</a></li>
-								<li><a href="blank.html">Pancake</a></li>
-								<li><a href="blank.html">Content</a></li>
-							</ul>
-						</li>
-						
+
 					</ul>
 				</div>
 			</div>
+
+		</section>
+	</main>
+
+
+	<!-- SITE-FOOTER -->
+	<footer class="site-footer">
+		<div class="site-footer__container container">
+			
+			<div class="site-footer__list-wrapper site-footer__list-wrapper--first">
+				<h3 class="site-footer__heading">Get in touch</h3>
+				<ul class="site-footer__list">
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">About Us</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Careers</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Press Releases</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Blog</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="site-footer__list-wrapper site-footer__list-wrapper--second">
+				<h3 class="site-footer__heading">Connections</h3>
+				<ul class="site-footer__list">
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Facebook</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Twitter</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Instagram</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">YouTube</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">LinkedIn</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="site-footer__list-wrapper site-footer__list-wrapper--third">
+				<h3 class="site-footer__heading">Earnings</h3>
+				<ul class="site-footer__list">
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Become an Affiliate</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Advertise your product</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Sell on Market</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="site-footer__list-wrapper site-footer__list-wrapper--fourth">
+				<h3 class="site-footer__heading">Account</h3>
+
+				<ul class="site-footer__list">
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Your account</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Return Centre</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">100% Purchase protection</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Chat with us</a>
+					</li>
+
+					<li class="site-footer__item">
+						<a class="site-footer__link" href="#">Help</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			
+
 		</div>
-	</header>
+		<div class="container">
+
+			<div class="site-footer__links">
+				<h3 class="site-footer__links__heading">Product tags</h3>
+				<a class="site-footer__link--tag" href="#">Beans</a>
+				<a class="site-footer__link--tag" href="#">Carrots</a>
+				<a class="site-footer__link--tag" href="#">Apples</a>
+				<a class="site-footer__link--tag" href="#">Garlic</a>
+				<a class="site-footer__link--tag" href="#">Mushrooms</a>
+				<a class="site-footer__link--tag" href="#">Tomatoes</a>
+				<a class="site-footer__link--tag" href="#">Chili peppers</a>
+				<a class="site-footer__link--tag" href="#">Broccoli</a>
+				<a class="site-footer__link--tag" href="#">Watermelons</a>
+				<a class="site-footer__link--tag" href="#">Oranges</a>
+				<a class="site-footer__link--tag" href="#">Bananas</a>
+				<a class="site-footer__link--tag" href="#">Grapes</a>
+				<a class="site-footer__link--tag" href="#">Cherries</a>
+				<a class="site-footer__link--tag" href="#">Meat</a>
+				<a class="site-footer__link--tag" href="#">Seo tag</a>
+				<a class="site-footer__link--tag" href="#">Fish</a>
+				<a class="site-footer__link--tag" href="#">Fresh food</a>
+				<a class="site-footer__link--tag" href="#">Lemons</a>
+
+				<p class="copyright">Copyright 2020 &copy; petrbilek.com</p>
+			</div>
+
+		</div>
+
+	</footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+	<script>	
+		$('.customers__list').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: ,
+			variableWidth: true
+		});
+	</script>
+	<script src="./js/main.js"></script>
 </body>
 </html>
